@@ -20,7 +20,7 @@ const Movies = () => {
   };
 
   const { data: genreData } = getGenres();
-  const { data, isPending, error, isError } = getMovies({
+  const { data } = getMovies({
     page,
     with_genres: genre,
     without_genres: "18,36,27,10749",
